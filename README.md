@@ -1,7 +1,7 @@
 # code-forensics
 Scripts to use code-forensics
 
-`code-forensics` is a great tool developped by Silvio Montanari based on Adam Tornhill's book [Your Code as a Crime Scene](https://pragprog.com/titles/atcrime/your-code-as-a-crime-scene/)
+`code-forensics` is a great tool developped by Silvio Montanari based on Adam Tornhill's book [Your Code as a Crime Scene](https://pragprog.com/titles/atcrime/your-code-as-a-crime-scene/).  
 Visit the documentation [here](https://github.com/smontanari/code-forensics/wiki)
 
 ## Visualization
