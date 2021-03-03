@@ -1,0 +1,10 @@
+{
+    "name": "projectName-forensics",
+    "version": "1.0.0",
+    "description": "",
+    "author": "Yoan Thirion",
+    "dependencies": {
+        "code-forensics": "^3.0.0",
+        "gulp4": "^4.0.2"
+    }
+}
