@@ -34,21 +34,24 @@ print "INSTALL DEPENDENCIES"
 npm install
 
 print "CODE ANALYSIS"
-print "Run Hotspot analysis"
+print "Run Hotspot analysis (1/8)"
 gulp hotspot-analysis --targetFile=$targetFile --dateFrom=$dateFrom --dateTo=$dateTo
-print "RUN Complexity trend analysis"
+print "RUN Complexity trend analysis (2/8)"
 gulp sloc-trend-analysis --targetFile=$targetFile --dateFrom=$dateFrom --dateTo=$dateTo --timeSplit=eom
-print "RUN Coupling analysis"
+print "RUN Coupling analysis (3/8)"
 gulp sum-of-coupling-analysis --targetFile=$targetFile --dateFrom=$dateFrom --dateTo=$dateTo --timeSplit=eom
-print "RUN System evolution analysis"
+print "RUN System evolution analysis (4/8)"
 gulp system-evolution-analysis --targetFile=$targetFile --dateFrom=$dateFrom --dateTo=$dateTo --timeSplit=eom
 
 print "SOCIAL ANALYSIS"
-print "RUN Commit message analysis"
+print "RUN Commit message analysis (5/8)"
 gulp commit-message-analysis --targetFile=$targetFile --dateFrom=$dateFrom --dateTo=$dateTo --minWordCount=1
-print "RUN Developer coupling analysis"
+print "RUN Developer coupling analysis (6/8)"
 gulp developer-coupling-analysis --targetFile=$targetFile --dateFrom=$dateFrom --dateTo=$dateTo
-print "RUN Developer effort analysis"
+print "RUN Developer effort analysis (7/8)"
 gulp developer-effort-analysis --targetFile=$targetFile --dateFrom=$dateFrom --dateTo=$dateTo
-print "RUN Knowledge Map analysis"
+print "RUN Knowledge Map analysis (8/8)"
 gulp knowledge-map-analysis --targetFile=$targetFile --dateFrom=$dateFrom --dateTo=$dateTo
+
+print "RUN webserver on http://localhost:3000/"
+gulp webserver
