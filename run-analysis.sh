@@ -26,7 +26,7 @@ rm -rf output
 rm -rf tmp
 
 print "INJECT VARIABLES"
-sed -i '' "s|project|$projectName|g" package.json
+sed -i '' "s|projectName|$projectName|g" package.json
 sed -i '' "s|repositoryPath|$repositoryPath|g" gulpfile.js
 
 
