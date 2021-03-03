@@ -117,3 +117,5 @@ dist
 
 /output
 /tmp
+
+package-lock.json
